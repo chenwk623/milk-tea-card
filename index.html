@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>今天奶茶喝哪家</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <span class="lantern-glow glow-one"></span>
+      <span class="lantern-glow glow-two"></span>
+      <span class="gold-dust dust-one"></span>
+      <span class="gold-dust dust-two"></span>
+      <span class="gold-dust dust-three"></span>
+    </div>
+    <div class="opening-curtain" aria-hidden="true">
+      <span class="curtain-panel curtain-left"></span>
+      <span class="curtain-panel curtain-right"></span>
+      <span class="curtain-seal">茶令</span>
+    </div>
+    <main class="palace-app" aria-labelledby="app-title">
+      <section class="stage">
+        <span class="corner corner-tl" aria-hidden="true"></span>
+        <span class="corner corner-tr" aria-hidden="true"></span>
+        <span class="corner corner-bl" aria-hidden="true"></span>
+        <span class="corner corner-br" aria-hidden="true"></span>
+
+        <div class="top-bar">
+          <span class="seal">御选</span>
+          <div>
+            <p class="kicker">今日茶令</p>
+            <h1 id="app-title">今天奶茶喝哪家</h1>
+          </div>
+        </div>
+
+        <section class="oracle" aria-live="polite">
+          <div class="card-wrap">
+            <span class="card-glow" aria-hidden="true"></span>
+            <button class="flip-card" id="flipCard" type="button" aria-label="随机翻牌">
+              <span class="card-face card-front">
+                <span class="cloud cloud-left"></span>
+                <span class="cloud cloud-right"></span>
+                <span class="card-emblem" aria-hidden="true"><span>茶</span></span>
+                <span class="card-title">翻牌</span>
+                <span class="card-subtitle">点此奉旨选茶</span>
+              </span>
+              <span class="card-face card-back">
+                <span class="milk-tea-outline" aria-hidden="true">
+                  <span class="straw"></span>
+                  <span class="lid"></span>
+                  <span class="cup"></span>
+                  <span class="tea-line"></span>
+                  <span class="pearl pearl-one"></span>
+                  <span class="pearl pearl-two"></span>
+                  <span class="pearl pearl-three"></span>
+                </span>
+                <span class="chosen-label">今日侍茶</span>
+                <span class="chosen-name" id="chosenName">静候圣裁</span>
+              </span>
+            </button>
+          </div>
+
+          <div class="result-panel">
+            <span class="result-kicker">玉牌一落，茶香有旨</span>
+            <p id="resultText">金牌未启，先让命运斟一盏。</p>
+            <div class="order-scroll" id="orderScroll" aria-live="polite">
+              <span class="oracle-line" id="oracleLine">候旨中</span>
+              <div class="order-grid">
+                <span><strong>甜度</strong><em id="sugarText">待定</em></span>
+                <span><strong>冰量</strong><em id="iceText">待定</em></span>
+                <span><strong>小料</strong><em id="toppingText">待定</em></span>
+              </div>
+            </div>
+            <button class="primary-action" id="drawButton" type="button">翻一张</button>
+          </div>
+        </section>
+
+        <section class="brand-court" aria-label="候选奶茶品牌">
+          <article class="brand-token"><span>cui妃</span></article>
+          <article class="brand-token"><span>可贵妃</span></article>
+          <article class="brand-token"><span>茉妃</span></article>
+          <article class="brand-token"><span>古妃</span></article>
+          <article class="brand-token"><span>点妃</span></article>
+          <article class="brand-token"><span>喜贵人</span></article>
+          <article class="brand-token"><span>话贵人</span></article>
+          <article class="brand-token"><span>唐嫔</span></article>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
